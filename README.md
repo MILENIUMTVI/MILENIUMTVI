@@ -35,7 +35,7 @@
   <h1>Transmisión en Vivo</h1>
   <!-- Reproductor de Video.js -->
   <video-js id="my-video" class="video-js" controls preload="auto" autoplay muted>
-    <source src="[TU_URL_M3U8](https://app.viloud.tv/hls/channel/c8984eee3163b175a0c725860f53749d.m3u8)" type="application/x-mpegURL">
+    <source src="(https://app.viloud.tv/hls/channel/c8984eee3163b175a0c725860f53749d.m3u8)" type="application/x-mpegURL">
     <p>Tu navegador no soporta el video.</p>
   </video-js>
   <!-- Script de Video.js -->
