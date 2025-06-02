@@ -2,4 +2,34 @@
 
 **MILENIUMTVI/MILENIUMTVI** 
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width:100%;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://anym3u8player.com/player-generator/mplay.php?data=nCLCQmLtFml/wHRSNI+EmeWTWnDBuFpLzkEA3F8ZZnP7elYXudG4j9SVkHZ20AUWLkFtU/AlU+HGwG6Pk4Jp3ZACUQKKms7WpBWm3wsU5abi8Nfrxv/Ac2ScFCWo/AgyChPqOjMBIztJBV4BUfLSgmQD7PVhFQDA8jvFoMBpfu0NRikhaH2LaacTyiuQQHMklWW7JvXljeL/p8kiFts=" frameborder="0" allow="autoplay" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transmisión en Vivo M3U8</title>
+  <style>
+    body { margin: 0; padding: 20px; font-family: Arial; background-color: #f4f4f4; text-align: center; }
+    h1 { color: #222; }
+    video { width: 90%; max-width: 900px; margin: 0 auto; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <h1>Transmisión en Vivo</h1>
+  <video id="my-video" class="video-js" controls autoplay muted></video>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script>
+    var video = document.getElementById('my-video');
+    var videoSrc = 'https://app.viloud.tv/hls/channel/c8984eee3163b175a0c725860f53749d.m3u8'; 
+    if (Hls.isSupported()) {
+      var hls = new Hls();
+      hls.loadSource(videoSrc);
+      hls.attachMedia(video);
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = videoSrc;
+    } else {
+      video.innerHTML = '<p>Este navegador no soporta HLS.</p>';
+    }
+  </script>
+</body>
+</html>
