@@ -1,5 +1,3 @@
-## Hi welcome 👋
-**MILENIUMTVI/MILENIUMTVI** 
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -8,7 +6,12 @@
   <style>
     body { margin: 0; padding: 20px; font-family: Arial; background-color: #f4f4f4; text-align: center; }
     h1 { color: #222; }
-    video { width: 90%; max-width: 900px; margin: 0 auto; border-radius: 5px; }
+    video { 
+      width: 100%; 
+      max-width: 1200px; /* Video más grande */
+      margin: 0 auto; 
+      border-radius: 5px; 
+    }
   </style>
 </head>
 <body>
